@@ -1,0 +1,91 @@
+@extends('layout.main')
+
+@section('content')
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2>Update Pemeliharaan Bulanan Running Text</h2>
+            </div>
+            <div class="pull-right">
+                <a class="btn btn-primary" href="{{route('pemeliharaanBulananRunningText.index')}}"> Back</a>
+            </div>
+        </div>
+    </div>
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> There were some problems with your
+            input.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+    <form action="{{route('pemeliharaanBulananRunningText.update',$pemeliharaanbulananrunningtext->id)}}" method="POST">
+        @csrf
+        @method('PUT')
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Id Peralatan : </strong>
+                    <input type="text"  value="{{$pemeliharaanbulananrunningtext->id_peralatan}}" name="id_peralatan" class="form-control" placeholder="id peralatan">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Tanggal:</strong>
+                    <textarea class="form-control" value style="height:150px" name="tanggal" placeholder="tanggal">{{$pemeliharaanbulananrunningtext->tanggal}}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>pembersihan dan pemeriksaan led:</strong>
+                    <textarea class="form-control" value style="height:150px" name="pembersihan_dan_pemeriksaan_led" placeholder="pembersihan dan pemeriksaan led">{{$pemeliharaanbulananrunningtext->pembersihan_dan_pemeriksaan_led}}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>pemeriksaan control elements:</strong>
+                    <textarea class="form-control" value style="height:150px" name="pemeriksaan_control_elements" placeholder="pemeriksaan control elements">{{$pemeliharaanbulananrunningtext->pemeriksaan_control_elements}}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>pemeriksaan perangkat dari kerusakan fisik:</strong>
+                    <textarea class="form-control" value style="height:150px" name="pemeriksaan_perangkat_dari_kerusakan_fisik" placeholder="pemeriksaan perangkat dari kerusakan fisik">{{$pemeliharaanbulananrunningtext->pemeriksaan_perangkat_dari_kerusakan_fisik}}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>keterangan:</strong>
+                    <textarea class="form-control" value style="height:150px" name="keterangan" placeholder="keterangan">{{$pemeliharaanbulananrunningtext->keterangan}}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Id Personil : </strong>
+                    <input type="text"  value="{{$pemeliharaanbulananrunningtext->id_personil}}" name="id_personil" class="form-control" placeholder="id personil">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Id Pengawas : </strong>
+                    <input type="text"  value="{{$pemeliharaanbulananrunningtext->id_pengawas}}" name="id_pengawas" class="form-control" placeholder="id pengawas">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>created by:</strong>
+                    <input class="form-control" style="height:150px" name="created_by" value="{{$pemeliharaanbulananrunningtext->created_by}}" placeholder="created by">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+    </form>
+@endsection
