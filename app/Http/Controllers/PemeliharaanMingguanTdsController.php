@@ -95,7 +95,7 @@ class PemeliharaanMingguanTdsController extends Controller
     public function edit($id)
     {
         $pemeliharaanmingguantds  =Pemeliharaan_Mingguan_Tds::where('id', '=', $id)->first();
-        return view('pemeliharaanMingguanTds.edit', compact('pemeliharaanmingguantds '));
+        return view('pemeliharaanMingguanTds.edit', compact('pemeliharaanmingguantds'));
     }
     public function updateData(Request $request, $id)
     {

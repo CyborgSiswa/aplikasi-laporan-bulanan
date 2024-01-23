@@ -33,14 +33,14 @@
         @foreach ($pemeliharaanhariantdses as $pemeliharaanhariantds)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $pemeliharaanharianconferencesystem->id_peralatan }}</td>
-                <td>{{ $pemeliharaanharianconferencesysteml->tanggal }}</td>
-                <td>{{ $pemeliharaanharianconferencesystem->pembersihan_ruangan_peralatan_server_tds}}</td>
-                <td>{{ $pemeliharaanharianconferencesystem->periksa_suhu_dan_kelembaban_ruangan_peralatan_server_tds}}</td>
-                <td>{{ $pemeliharaanharianconferencesystem->pembersihan_bagian_luar_peralatan_tds}}</td>
-                <td>{{ $pemeliharaanharianconferencesystem->keterangan}}</td>
-                <td>{{ $pemeliharaanharianconferencesystem->id_personil }}</td>
-                <td>{{ $pemeliharaanharianconferencesystem->id_pengawas }}</td>
+                <td>{{ $pemeliharaanhariantds->id_peralatan }}</td>
+                <td>{{ $pemeliharaanhariantds->tanggal }}</td>
+                <td>{{ $pemeliharaanhariantds->pembersihan_ruangan_peralatan_server_tds}}</td>
+                <td>{{ $pemeliharaanhariantds->periksa_suhu_dan_kelembaban_ruangan_peralatan_server_tds}}</td>
+                <td>{{ $pemeliharaanhariantds->pembersihan_bagian_luar_peralatan_tds}}</td>
+                <td>{{ $pemeliharaanhariantds->keterangan}}</td>
+                <td>{{ $pemeliharaanhariantds->id_personil }}</td>
+                <td>{{ $pemeliharaanhariantds->id_pengawas }}</td>
                 <td>
                     <form action="#" method="POST">
 

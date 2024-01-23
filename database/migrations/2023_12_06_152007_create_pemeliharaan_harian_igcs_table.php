@@ -21,7 +21,7 @@ class CreatePemeliharaanHarianIgcsTable extends Migration
             $table-> string ('pembersihan_ruangan_control');
             $table-> string ('pembersihan_suhu_dan_ruangan_control');
             $table-> string ('mengisi_dan_mencharger_baterai_ht_bila_baterai_off');
-            $table-> string ('jangan_mengisi__secara_terus_menerus_bila_baterai_full');
+            $table-> string ('jangan_mengisi_secara_terus_menerus_bila_baterai_full');
             $table-> string ('pembersihan_bagian_luar_site_control');
             $table-> string ('pembersihan_bagian_luar_base_control');
             $table-> string ('pembersihan_bagian_luar_site_manager');

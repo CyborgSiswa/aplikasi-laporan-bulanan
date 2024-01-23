@@ -26,6 +26,8 @@
             <th>pembersihan ups</th>
             <th>lokasi sekitar penempatan peralatan</th>
             <th>periksa main supply voltage</th>
+            <th>periksa output voltage ups</th>
+            <th>pemeriksaan kabel kabel dan konektor yang terlihat</th>
             <th>keterangan</th>
             <th>id personil</th>
             <th>id pengawas</th> 
@@ -40,6 +42,8 @@
                 <td>{{ $pemeliharaanhariangawangpendeteksimetal->pembersihan_ups }}</td>
                 <td>{{ $pemeliharaanhariangawangpendeteksimetal->lokasi_sekitar_penempatan_peralatan }}</td>
                 <td>{{ $pemeliharaanhariangawangpendeteksimetal->periksa_main_supply_voltage }}</td>
+                <td>{{ $pemeliharaanhariangawangpendeteksimetal->periksa_output_voltage_ups }}</td>
+                <td>{{ $pemeliharaanhariangawangpendeteksimetal->pemeriksaan_kabel_kabel_dan_konektor_yang_terlihat}}</td>
                 <td>{{ $pemeliharaanhariangawangpendeteksimetal->keterangan}}</td>
                 <td>{{ $pemeliharaanhariangawangpendeteksimetal->id_personil }}</td>
                 <td>{{ $pemeliharaanhariangawangpendeteksimetal->id_pengawas }}</td>

@@ -26,7 +26,7 @@
             <th>pembersihan ruangan control</th>
             <th>pembersihan suhu dan ruangan control</th>
             <th>mengisi dan mencharger baterai ht bila baterai off</th>
-            <th>jangan mengisi secara terus menerus bila bateraif ull</th>
+            <th>jangan mengisi secara terus menerus bila baterai full</th>
             <th>pembersihan bagian luar site control </th>
             <th>pembersihan bagian luar base control</th>
             <th>pembersihan bagian luar site manager</th>
@@ -44,7 +44,7 @@
                 <td>{{ $pemeliharaanharianigcs->pembersihan_ruangan_control }}</td>
                 <td>{{ $pemeliharaanharianigcs->pembersihan_suhu_dan_ruangan_control}}</td>
                 <td>{{ $pemeliharaanharianigcs->mengisi_dan_mencharger_baterai_ht_bila_baterai_off }}</td>
-                <td>{{ $pemeliharaanharianigcs->jangan_mengisi__secara_terus_menerus_bila_baterai_full}}</td>
+                <td>{{ $pemeliharaanharianigcs->jangan_mengisi_secara_terus_menerus_bila_baterai_full}}</td>
                 <td>{{ $pemeliharaanharianigcs->pembersihan_bagian_luar_site_control }}</td>
                 <td>{{ $pemeliharaanharianigcs->pembersihan_bagian_luar_base_control}}</td>
                 <td>{{ $pemeliharaanharianigcs->pembersihan_bagian_luar_site_manager }}</td>

@@ -70,7 +70,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('login',[AuthController::class,'login']);
+Route::get('login',[AuthController::class,'login'])->name('login.index');
 Route::post('postLogin',[AuthController::class,'postLogin'])->name('login.post');
 Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
@@ -171,7 +171,7 @@ Route::prefix('pemeliharaan-harian-fids')->group(function(){
     Route::get('create',[PemeliharaanHarianFidsController::class,'create'])->name('pemeliharaanHarianFids.create');
     Route::post('store',[PemeliharaanHarianFidsController::class,'storeWeb'])->name('pemeliharaanHarianFids.store');
     Route::get('edit/{id}',[PemeliharaanHarianFidsController::class,'edit'])->name('pemeliharaanHarianFids.edit');
-    Route::put('update/{id}',[MasPemeliharaanHarianFidsController::class,'updateData'])->name('pemeliharaanHarianFids.update');
+    Route::put('update/{id}',[PemeliharaanHarianFidsController::class,'updateData'])->name('pemeliharaanHarianFids.update');
 });
 Route::prefix('pemeliharaan-harian-tds')->group(function(){
     Route::get('/',[PemeliharaanHarianTdsController::class,'indexWeb'])->name('pemeliharaanHarianTds.index');
@@ -184,8 +184,8 @@ Route::prefix('pemeliharaan-harian-pabx')->group(function(){
     Route::get('/',[PemeliharaanHarianPabxController::class,'indexWeb'])->name('pemeliharaanHarianPabx.index');
     Route::get('create',[PemeliharaanHarianPabxController::class,'create'])->name('pemeliharaanHarianPabx.create');
     Route::post('store',[PemeliharaanHarianPabxController::class,'storeWeb'])->name('pemeliharaanHarianPabx.store');
-    Route::get('edit/{id}',[PemeliharaanHarianPabxController::class,'edit'])->name('PemeliharaanHarianPabx.edit');
-    Route::put('update/{id}',[PemeliharaanHarianPabxController::class,'updateData'])->name('PemeliharaanHarianPabx.update');
+    Route::get('edit/{id}',[PemeliharaanHarianPabxController::class,'edit'])->name('pemeliharaanHarianPabx.edit');
+    Route::put('update/{id}',[PemeliharaanHarianPabxController::class,'updateData'])->name('pemeliharaanHarianPabx.update');
 });
 Route::prefix('pemeliharaan-harian-igcs')->group(function(){
     Route::get('/',[PemeliharaanHarianIgcsController::class,'indexWeb'])->name('pemeliharaanHarianIgcs.index');
@@ -213,7 +213,7 @@ Route::prefix('pemeliharaan-harian-wifi')->group(function(){
     Route::get('create',[PemeliharaanHarianWifiController::class,'create'])->name('pemeliharaanHarianWifi.create');
     Route::post('store',[PemeliharaanHarianWifiController::class,'storeWeb'])->name('pemeliharaanHarianWifi.store');
     Route::get('edit/{id}',[PemeliharaanHarianWifiController::class,'edit'])->name('pemeliharaanHarianWifi.edit');
-    Route::put('update/{id}',[MPemeliharaanHarianWifiController::class,'updateData'])->name('pemeliharaanHarianWifi.update');
+    Route::put('update/{id}',[PemeliharaanHarianWifiController::class,'updateData'])->name('pemeliharaanHarianWifi.update');
 });
 Route::prefix('pemeliharaan-harian-conference-system')->group(function(){
     Route::get('/',[PemeliharaanHarianConferenceSystemController::class,'indexWeb'])->name('pemeliharaanHarianConferenceSystem.index');
@@ -395,14 +395,14 @@ Route::prefix('pemeliharaan-bulanan-pabx')->group(function(){
     Route::get('create',[PemeliharaanBulananPabxController::class,'create'])->name('pemeliharaanBulananPabx.create');
     Route::post('store',[PemeliharaanBulananPabxController::class,'storeWeb'])->name('pemeliharaanBulananPabx.store');
     Route::get('edit/{id}',[PemeliharaanBulananPabxController::class,'edit'])->name('pemeliharaanBulananPabx.edit');
-    Route::put('update/{id}',[PemeliharaanBulananPabxController::class,'updateData'])->name('maspemeliharaanBulananPabx.update');
+    Route::put('update/{id}',[PemeliharaanBulananPabxController::class,'updateData'])->name('pemeliharaanBulananPabx.update');
 });
 Route::prefix('pemeliharaan-bulanan-igcs')->group(function(){
     Route::get('/',[PemeliharaanBulananIgcsController::class,'indexWeb'])->name('pemeliharaanBulananIgcs.index');
     Route::get('create',[PemeliharaanBulananIgcsController::class,'create'])->name('pemeliharaanBulananIgcs.create');
-    Route::post('store',[PemeliharaanBulananIgcsController::class,'storeWeb'])->name('pemeliharaanBulaanIgcs.store');
-    Route::get('edit/{id}',[PemeliharaanBulananIgcsController::class,'edit'])->name('pemeliharaanBulaanIgcs.edit');
-    Route::put('update/{id}',[PemeliharaanBulananIgcsController::class,'updateData'])->name('pemeliharaanBulaanIgcs.update');
+    Route::post('store',[PemeliharaanBulananIgcsController::class,'storeWeb'])->name('pemeliharaanBulananIgcs.store');
+    Route::get('edit/{id}',[PemeliharaanBulananIgcsController::class,'edit'])->name('pemeliharaanBulananIgcs.edit');
+    Route::put('update/{id}',[PemeliharaanBulananIgcsController::class,'updateData'])->name('pemeliharaanBulananIgcs.update');
 });
 Route::prefix('pemeliharaan-bulanan-access-control')->group(function(){
     Route::get('/',[PemeliharaanBulananAccessControlController::class,'indexWeb'])->name('pemeliharaanBulananAccessControl.index');

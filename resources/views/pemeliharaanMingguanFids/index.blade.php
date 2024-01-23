@@ -50,7 +50,7 @@
 
                         <a class="btn btn-info" href="#">Show</a>
 
-                        <a class="btn btn-primary" href="{{route('pemeliharaanmingguanFids.edit',$pemeliharaanmingguanfids->id)}}">Edit</a>
+                        <a class="btn btn-primary" href="{{route('pemeliharaanMingguanFids.edit',$pemeliharaanmingguanfids->id)}}">Edit</a>
 
                         @csrf
                         @method('DELETE')

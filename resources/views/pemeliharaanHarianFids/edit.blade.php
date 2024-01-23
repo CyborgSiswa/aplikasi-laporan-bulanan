@@ -49,7 +49,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>pembersihan ups:</strong>
-                    <textarea class="form-control" value style="height:150px" name="pembersihan_ups" placeholder="pembersihan ups">{{$pemeliharaanharianfids->pembersihan ups}}</textarea>
+                    <textarea class="form-control" value style="height:150px" name="pembersihan_ups" placeholder="pembersihan ups">{{$pemeliharaanharianfids->pembersihan_ups}}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

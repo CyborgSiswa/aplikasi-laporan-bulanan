@@ -28,7 +28,7 @@
             <th>pemeriksaan modul modul site controller dan base station</th>
             <th>keterangan</th>
             <th>id personil</th>
-            <th>id pengawas</th> <th>No</th>
+            <th>id pengawas</th> 
             <th width="280px">Action</th>
         </tr>
         @foreach ($pemeliharaanbulananigcses as $pemeliharaanbulananigcs)
@@ -36,10 +36,10 @@
                 <td>{{ ++$i }}</td>
                 <td>{{ $pemeliharaanbulananigcs->id_peralatan }}</td>
                 <td>{{ $pemeliharaanbulananigcs->tanggal }}</td>
-                <td>{{ $pemeliharaanbulananigcs->pemeriksaan_kabel_coaxial }}</td>
-                <td>{{ $pemeliharaanbulananigcs->pemeriksaan_modul_modul_ht_maupun_transceiver }}</td>
-                <td>{{ $pemeliharaanbulananigcs->pemeriksaan_software_program_operasi }}</td>
-                <td>{{ $pemeliharaanbulananigcs->pemeriksaan_modul_modul_site_controller_dan_base_station }}</td>
+                <td>{{ $pemeliharaanbulananigcs->pemeriksaan_kabel_coaxial}}</td>
+                <td>{{ $pemeliharaanbulananigcs->pemeriksaan_modul_modul_ht_maupun_transceiver}}</td>
+                <td>{{ $pemeliharaanbulananigcs->pemeriksaan_software_program_operasi}}</td>
+                <td>{{ $pemeliharaanbulananigcs->pemeriksaan_modul_modul_site_controller_dan_base_station}}</td>
                 <td>{{ $pemeliharaanbulananigcs->keterangan }}</td>
                 <td>{{ $pemeliharaanbulananigcs->id_personil }}</td>
                 <td>{{ $pemeliharaanbulananigcs->id_pengawas }}</td>

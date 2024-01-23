@@ -71,8 +71,8 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>visual check tampilan layar control panel:</strong>
-                    <textarea class="form-control" style="height:150px" name="'visual check tampilan layar control panel" placeholder="visual check tampilan layar control panel"></textarea>
+                    <strong>pemeriksaan kabel kabel dan konektor yang terlihat:</strong>
+                    <textarea class="form-control" style="height:150px" name="pemeriksaan_kabel_kabel_dan_konektor_yang_terlihat" placeholder="pemeriksaan kabel kabel dan konektor yang terlihat"></textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

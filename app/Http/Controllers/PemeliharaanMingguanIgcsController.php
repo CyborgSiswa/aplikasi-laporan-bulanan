@@ -23,8 +23,8 @@ class PemeliharaanMingguanIgcsController extends Controller
         $request->validate([
             'id_peralatan' => 'required',
             'tanggal' => 'required',
-            'pemeriksaan_alert_system_audible' => 'required',
-            'pemeriksaan_alert_system_visible' => 'required',
+            'pemeriksaan_atau_pengukuran_voltage_power_supply' => 'required',
+            'pemeriksaan_konektor_konektor' => 'required',
             'keterangan' => 'required',
             'id_personil' => 'required',
             'id_pengawas' => 'required',
@@ -32,7 +32,7 @@ class PemeliharaanMingguanIgcsController extends Controller
         ]);
 
         Pemeliharaan_Mingguan_Igcs::create($request->all());
-        return redirect()->route('pemeliharaanMingguanIgcs..index')
+        return redirect()->route('pemeliharaanMingguanIgcs.index')
             ->with('success', 'pemeliharaanMingguanIgcs created successfully.');
 
     }

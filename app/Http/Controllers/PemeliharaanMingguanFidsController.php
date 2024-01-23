@@ -99,7 +99,7 @@ class PemeliharaanMingguanFidsController extends Controller
     public function edit($id)
     {
         $pemeliharaanmingguanfids =Pemeliharaan_Mingguan_Fids::where('id', '=', $id)->first();
-        return view('pemeliharaanMingguanAccessControl.edit', compact('pemeliharaanmingguanfids'));
+        return view('pemeliharaanMingguanFids.edit', compact('pemeliharaanmingguanfids'));
     }
     public function updateData(Request $request, $id)
     {

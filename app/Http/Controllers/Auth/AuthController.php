@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Session;
+use Illuminate\Support\Facades\Session;
+use App\Models\User;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
@@ -29,29 +31,7 @@ class AuthController extends Controller
         return redirect("login")->withSuccess('Opps!  You have entered invalid credentials');
     }
 
-    public function loginApi(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'email' => 'required',
-            'password' => 'required',
-        ]);
-        if ($validator->fails()) {
-            return response()->json([
-                'error' => $validator->errors(),
-            ], 400);
-        }
-        $login = User::where('email', '=', $request->email)->first();
-        if ($login) {
-            return response()->json([
-                'message' => 'success',
-                'data' => $login,
-            ], 200);
-        } else {
-            return response()->json([
-                'message' => 'not found',
-            ], 404);
-        }
-    }
+    
 
     public function postRegistration(Request $request)
     {
@@ -71,14 +51,7 @@ class AuthController extends Controller
         $data['password'] = bcrypt($data['password']);
         $user = User::create($data);
 
-        if ($user) {
-            return response()->json([
-                'message' => 'success',
-            ], 200);
-        }
-        return response()->json([
-            'message' => 'failed',
-        ], 500);
+        return redirect()->route('login.index')->withMessage('registration successfully');
     }
     public function dashboard()
     {

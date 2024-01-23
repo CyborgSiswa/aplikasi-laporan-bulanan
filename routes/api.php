@@ -54,7 +54,7 @@ use App\Http\Controllers\PemeliharaanBulananJaringanFiberOpticController;
 use App\Http\Controllers\PemeliharaanBulananWifiController;
 use App\Http\Controllers\PemeliharaanBulananRunningTextController;
 use App\Http\Controllers\PemeliharaanBulananConferenceSystemController;
-
+use App\Http\Controllers\api\AuthController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -70,6 +70,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::prefix('auth')->group(function(){
+    // Login route
+    Route::post('login', [AuthController::class, 'login']);
+    // Registration route
+    Route::post('register', [AuthController::class, 'postRegistration']);
+});
 Route::prefix('petugas')->group(function(){
     Route::get('/',[PetugasController::class,'index']);
     Route::post('/create',[PetugasController::class,'store']);

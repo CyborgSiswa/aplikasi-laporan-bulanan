@@ -67,7 +67,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>jangan mengisi secara terus menerus bila baterai full:</strong>
-                    <textarea class="form-control" value style="height:150px" name="jangan_mengisi__secara_terus_menerus_bila_baterai_full" placeholder="jangan mengisi secara terus menerus bila baterai full">{{$pemeliharaanharianigcs->jangan_mengisi__secara_terus_menerus_bila_baterai_full}}</textarea>
+                    <textarea class="form-control" value style="height:150px" name="jangan_mengisi_secara_terus_menerus_bila_baterai_full" placeholder="jangan mengisi secara terus menerus bila baterai full">{{$pemeliharaanharianigcs->jangan_mengisi_secara_terus_menerus_bila_baterai_full}}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

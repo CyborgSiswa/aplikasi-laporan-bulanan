@@ -27,7 +27,7 @@
             <th>pemeriksaan access switch dan distribution switch</th>
             <th>keterangan</th>
             <th>id personil</th>
-            <th>id pengawas</th> <th>No</th>
+            <th>id pengawas</th> 
             <th width="280px">Action</th>
         </tr>
         @foreach ($pemeliharaanbulananfidses as $pemeliharaanbulananfids)

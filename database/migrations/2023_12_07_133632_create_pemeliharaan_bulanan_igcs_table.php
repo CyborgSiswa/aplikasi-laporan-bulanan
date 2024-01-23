@@ -18,7 +18,7 @@ class CreatePemeliharaanBulananIgcsTable extends Migration
             $table-> string ('id_peralatan');
             $table-> string  ('tanggal');
             $table-> string('pemeriksaan_kabel_coaxial');
-            $table-> string('pemeriksaan_modul_modul_ht_maupun-transceiver');
+            $table-> string('pemeriksaan_modul_modul_ht_maupun_transceiver');
             $table-> string('pemeriksaan_software_program_operasi');
             $table-> string('pemeriksaan_modul_modul_site_controller_dan_base_station');
            

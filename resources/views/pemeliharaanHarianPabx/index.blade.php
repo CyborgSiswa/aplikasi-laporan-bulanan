@@ -33,14 +33,14 @@
         @foreach ($pemeliharaanharianpabxes as $pemeliharaanharianpabx)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $pemeliharaanharianpabx->id_peralatan }}</td>
-                <td>{{ $pemeliharaanharianpabx->tanggal }}</td>
+                <td>{{ $pemeliharaanharianpabx->id_peralatan}}</td>
+                <td>{{ $pemeliharaanharianpabx->tanggal}}</td>
                 <td>{{ $pemeliharaanharianpabx->pembersihan_ruangan_sentral_operator}}</td>
                 <td>{{ $pemeliharaanharianpabx->periksa_suhu_dan_kelembaban_ruangan_peralatan_server_pabx}}</td>
                 <td>{{ $pemeliharaanharianpabx->periksa_uji_coba_change_over_unit}}</td>
                 <td>{{ $pemeliharaanharianpabx->keterangan}}</td>
-                <td>{{ $pemeliharaanharianpabx->id_personil }}</td>
-                <td>{{ $pemeliharaanharianpabx->id_pengawas }}</td>
+                <td>{{ $pemeliharaanharianpabx->id_personil}}</td>
+                <td>{{ $pemeliharaanharianpabx->id_pengawas}}</td>
                 <td>
                     <form action="#" method="POST">
 

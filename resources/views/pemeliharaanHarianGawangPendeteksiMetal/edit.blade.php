@@ -49,7 +49,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>pembersihan ups:</strong>
-                    <textarea class="form-control" value style="height:150px" name="pembersihan_ups" placeholder="pembersihan ups">{{$pemeliharaanhariangawangpendeteksimetal->pembersihan ups}}</textarea>
+                    <textarea class="form-control" value style="height:150px" name="pembersihan_ups" placeholder="pembersihan ups">{{$pemeliharaanhariangawangpendeteksimetal->pembersihan_ups}}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -60,14 +60,14 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>pemeriksaan main supply voltage:</strong>
-                    <textarea class="form-control" value style="height:150px" name="pemeriksaan_main_supply_voltage" placeholder="pemeriksaan main supply voltage">{{$pemeliharaanhariangawangpendeteksimetal->pemeriksaan_main_supply_voltage}}</textarea>
+                    <strong>periksa main supply voltage:</strong>
+                    <textarea class="form-control" value style="height:150px" name="periksa_main_supply_voltage" placeholder="periksa main supply voltage">{{$pemeliharaanhariangawangpendeteksimetal->periksa_main_supply_voltage}}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>pemeriksaan output voltage ups:</strong>
-                    <textarea class="form-control" value style="height:150px" name="pemeriksaan_output_voltage_ups" placeholder="pemeriksaan output voltage ups">{{$pemeliharaanhariangawangpendeteksimetal->pemeriksaan_output_voltage_ups}}</textarea>
+                    <strong>periksa output voltage ups:</strong>
+                    <textarea class="form-control" value style="height:150px" name="periksa_output_voltage_ups" placeholder="periksa output voltage ups">{{$pemeliharaanhariangawangpendeteksimetal->periksa_output_voltage_ups}}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

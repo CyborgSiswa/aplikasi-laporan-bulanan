@@ -96,7 +96,7 @@ class PemeliharaanBulananIgcsController extends Controller
     }
     public function edit($id)
     {
-        $pemeliharaanbulanangawangigcs = Pemeliharaan_Bulanan_Igcs::where('id', '=', $id)->first();
+        $pemeliharaanbulananigcs = Pemeliharaan_Bulanan_Igcs::where('id', '=', $id)->first();
         return view('pemeliharaanBulananIgcs.edit', compact('pemeliharaanbulananigcs'));
     }
     public function updateData(Request $request, $id)

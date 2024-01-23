@@ -26,7 +26,7 @@
             <th>pemeriksaan program operasi</th>
             <th>keterangan</th>
             <th>id personil</th>
-            <th>id pengawas</th> <th>No</th>
+            <th>id pengawas</th> 
             <th width="280px">Action</th>
         </tr>
         @foreach ($pemeliharaanbulananpabxes as $pemeliharaanbulananpabx)

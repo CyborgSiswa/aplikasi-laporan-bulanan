@@ -107,7 +107,7 @@ class PemeliharaanHarianJaringanFiberOpticController extends Controller
         $data = Pemeliharaan_Harian_Jaringan_Fiber_Optic::where('id', '=', $id)->update([
             'id_peralatan' =>  $request->id_peralatan,
             'tanggal' => $request->tanggal,
-            'melakukan_test_ping_jaringan_kesetiap_perangkat_yang_terhubung' => $request->pembersihan_main_unit,
+            'melakukan_test_ping_jaringan_kesetiap_perangkat_yang_terhubung' => $request->melakukan_test_ping_jaringan_kesetiap_perangkat_yang_terhubung,
             'keterangan' =>  $request->keterangan,
             'id_personil' =>  $request->id_personil,
             'id_pengawas' =>  $request->id_pengawas,

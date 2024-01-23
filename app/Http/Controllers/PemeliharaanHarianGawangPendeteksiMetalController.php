@@ -125,7 +125,7 @@ class PemeliharaanHarianGawangPendeteksiMetalController extends Controller
             'pembersihan_ups' =>  $request->pembersihan_ups,
             'lokasi_sekitar_penempatan_peralatan' =>  $request->lokasi_sekitar_penempatan_peralatan,
             'periksa_main_supply_voltage' =>  $request->periksa_main_supply_voltage,
-            'periksa_output_voltage_ups' => 'required', $request->periksa_output_voltage_ups,
+            'periksa_output_voltage_ups' =>  $request->periksa_output_voltage_ups,
             'pemeriksaan_kabel_kabel_dan_konektor_yang_terlihat' =>  $request->pemeriksaan_kabel_kabel_dan_konektor_yang_terlihat,
             'keterangan' =>  $request->keterangan,
             'id_personil' =>  $request->id_personil,

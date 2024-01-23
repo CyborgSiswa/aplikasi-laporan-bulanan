@@ -105,7 +105,7 @@ class PemeliharaanHarianIgcsController extends Controller
     public function edit($id)
     {
         $pemeliharaanharianigcs =Pemeliharaan_Harian_Igcs::where('id', '=', $id)->first();
-        return view('pemeliharaanHarianIgcs.edit', compact('pemeliharaanHarianIgcs'));
+        return view('pemeliharaanHarianIgcs.edit', compact('pemeliharaanharianigcs'));
     }
     public function updateData(Request $request, $id)
     {
@@ -132,8 +132,8 @@ class PemeliharaanHarianIgcsController extends Controller
             'pembersihan_ruangan_control' =>  $request->pembersihan_ruangan_control,
             'pembersihan_suhu_dan_ruangan_control' =>  $request->pembersihan_suhu_dan_ruangan_control,
             'mengisi_dan_mencharger_baterai_ht_bila_baterai_off' =>  $request->mengisi_dan_mencharger_baterai_ht_bila_baterai_off,
-            'jangan_mengisi_secara_terus_menerus_bila_baterai_full' =>  $request->jangan_mengisi__secara_terus_menerus_bila_baterai_full,
-            'pembersihan_bagian_luar_site_controlpembersihan_bagian_luar_site_control' => $request->pembersihan_bagian_luar_site_controlpembersihan_bagian_luar_site_control,
+            'jangan_mengisi_secara_terus_menerus_bila_baterai_full' =>  $request->jangan_mengisi_secara_terus_menerus_bila_baterai_full,
+            'pembersihan_bagian_luar_site_control' => $request->pembersihan_bagian_luar_site_control,
             'pembersihan_bagian_luar_base_control' =>  $request->pembersihan_bagian_luar_base_control,
             'pembersihan_bagian_luar_site_manager' =>  $request->pembersihan_bagian_luar_site_manager,
             'keterangan' =>  $request->keterangan,

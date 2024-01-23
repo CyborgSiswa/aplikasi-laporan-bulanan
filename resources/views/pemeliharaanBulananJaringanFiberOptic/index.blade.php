@@ -25,8 +25,8 @@
             <th>pengecekan join closure</th>
             <th>pemeriksaan secara patroli fiber optic tanah</th>
             <th>keterangan</th>
-            <th>id personil</th>
-            <th>id pengawas</th> <th>No</th>
+            <th>id personil</th>>
+            <th>id pengawas</th> 
             <th width="280px">Action</th>
         </tr>
         @foreach ($pemeliharaanbulananjaringanfiberoptices as $pemeliharaanbulananjaringanfiberoptic)
@@ -34,7 +34,7 @@
                 <td>{{ ++$i }}</td>
                 <td>{{ $pemeliharaanbulananjaringanfiberoptic->id_peralatan }}</td>
                 <td>{{ $pemeliharaanbulananjaringanfiberoptic->tanggal }}</td>
-                <td>{{ $pemeliharaanbulananjaringanfiberoptic->pengecekan_join_closurepemeriksaan_kabel_coaxial }}</td>
+                <td>{{ $pemeliharaanbulananjaringanfiberoptic->pengecekan_join_closure }}</td>
                 <td>{{ $pemeliharaanbulananjaringanfiberoptic->pemeriksaan_secara_patroli_fiber_optic_tanah}}</td>
                 <td>{{ $pemeliharaanbulananjaringanfiberoptic->keterangan }}</td>
                 <td>{{ $pemeliharaanbulananjaringanfiberoptic->id_personil }}</td>
